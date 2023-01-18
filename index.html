@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brendan Kiernan's Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Brendan <span class="highlight">Kiernan</span></h1>
+    <h2 class="welcome">Welcome to my Portfolio Site!</h2>
+    <div class="showcase">
+        <p>
+            Here you can read about (or access) various projects of mine. Please also consult my 
+            <a href="https://github.com/noo8man3">GitHub</a> for in-progress projects and open source contributions.
+        </p>
+    </div>
+    <hr />
+    <div class="projects-title">
+        <h2>>Projects</h2>
+        <div class="button-row">
+            <button class="desktop-btn">
+                <p>Desktop</p>
+            </button>
+            <button class="web-btn">
+                <p>Web</p>
+            </button>
+            <button class="mobile-btn">
+                <p>Mobile</p>
+            </button>
+            <button class="scripts-btn">
+                <p>Scripts</p>
+            </button>
+        </div>
+        <div class="projects">
+            <div class="desktop-proj">
+                <h4><a href="https://github.com/noo8man3/DoS_Client">Denial-of-Service Client - Java, JavaFX</a></h4>
+                <p>
+                    This Java program spams UDP packets at a user-designated IP address and port number. 
+                    JavaFX is used heavily to deliver easily readable analytics and provides a crisp, clean 
+                    user interface.
+                </p>
+    
+                <h4 class="desktop-text"><a href="https://github.com/noo8man3/PasswordCracker">Password Cracker - Java, JavaFX</a></h4>
+                <p class="desktop-text">
+                    This Java program performs a dictionary attack on a hashed password file. JavaFX is 
+                    used to simplify the process of selecting text files and initializing the attack once 
+                    said files are selected.
+                </p>
+            </div>
+    
+            <div class="web-proj hidden">
+                <h4><a href="https://github.com/noo8man3/Have-I-Been-Owned">Have I Been Owned? - HTML, CSS, JavaScript</a></h4>
+                <p>
+                    This webpage is a one-stop shop to see if your credentials are compromised. The idea 
+                    is very simple: If you willingly enter your credentials on this site, the webpage tells 
+                    you to change them.
+                </p>
+            </div>
+    
+            <div class="mobile-proj hidden">
+                <h4><a href="">Deadlines - Java, XML</a></h4>
+                <p>
+                    This Android application helps organize any events in your life in just a couple taps. 
+                    Deadlines offers a stellar user interface and ability to configure the app to what's important 
+                    to you. <br /> <i>NOTE:</i> This was a group project.
+                </p>
+            </div>
+    
+            <div class="scripts-proj hidden">
+                <h4><a href="https://github.com/noo8man3/PasswordGenerator">Password Generator - Python</a></h4>
+                <p>
+                    This simple yet elegant Python script generates a password using a randomized series of ASCII
+                    characters of a user-defined length.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="resume">
+        <h2>>Resume_Highlights</h2>
+        <button class="resume-btn" type="button">
+            <span class="plus-icon">
+                <b>+</b>
+            </span>
+        </button>
+        <div class="resume-text">
+            <h4>Education</h4>
+            <p>
+                B.S., Computer Science/Mathematics, St. Joseph's College, Patchogue, NY, 2019<br />
+                <i>Cumulative GPA: 3.9</i>
+            </p>
+
+            <h4>Experience</h4>
+            <p>
+                Application Support Analyst (Oct. 2019 - Feb. 2020): Supported the I.T. team via managing<br /> 
+                and deploying database queries among other tasks including, but not limited to: <br />
+                Requirements gathering, providing guidance to non-I.T. staff, quality assurance, and <br />
+                software support.
+            </p>
+
+            <h4>Skills</h4>
+            <p>
+                Programming Languages:
+            </p>
+            <ol>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Python</li>
+            </ol>
+        </div>
+    </div>
+    <hr />
+    <h2>>About</h2>
+    <table>
+    <div class="education">
+        <div class="content" id="education">
+            <tr>
+                <td>
+                    <img src="sju.jpg" width="600" height="400" />
+                </td>
+                <td>
+                    <h4>Education</h4>
+                    <p>
+                        I started my journey in higher education at Suffolk County Community College where I 
+                        studied for three years and graduated (twice), obtaining an 
+                        <abbr title="Associate in Arts">A.A.</abbr> in General Studies and an 
+                        <abbr title="Associate in Science">A.S.</abbr> in Computer Science. Afterwards, I decided 
+                        to attend St. Joseph's College in Patchogue, NY. I graduated with a 
+                        <abbr title="Bachelor in Science">B.S.</abbr> in Mathematics/Computer Science program 
+                        with a 3.9 GPA. While at St. Joseph's, I became a member of the Programming Team and 
+                        went to competition in the Bronx. 
+                    </p>
+                </td>
+            </tr>
+            
+        </div>
+    </div>
+    <div class="mission">
+        <div class="content" id="mission">
+            <tr>
+                <td>
+                    <h4>Mission</h4>
+                    <p>
+                        My mission to to obtain gainful employment in the technology sector where I can grow 
+                        professionally and learn the trade from more experienced developers. Ultimately, I just 
+                        love solving puzzles and problems alike. While entry-level, I believe my passion for 
+                        problem solving along with my ability to learn quickly can supplant my lack of experience, 
+                        making me an asset to any firm.
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <img src="handshake.webp" width="600" height="400" />
+                    </p>
+                </td>
+            </tr>
+        </div>
+    </div>
+    </table>
+
+</body>
+<footer>
+    <script src="portfolio_index.js"></script>
+</footer>
+</html>
