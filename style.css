@@ -3,6 +3,9 @@
     line-height: 1.5em;
     box-sizing: border-box;
     background-color: #1a1a1a;
+}
+
+body {
     text-align: center;
 }
 
@@ -65,16 +68,25 @@ p {
     color: #ffffff;
 }
 
+#language-list {
+    display: inline-block;
+    text-align: left;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
 ol li {
-    color: #ffffff;
+    counter-increment: step-counter;
+    color: #fff;
+}
+ol li:before {
+    content: counter(step-counter)". ";
 }
 
-.resume-text {
+.resume-text.hidden {
     display: none;
-}
-
-.resume-text.show-text {
-    display: block;
 }
 
 .about-title {
@@ -83,33 +95,20 @@ ol li {
 
 .resume-btn {
     background-color: #00aa00;
-    color: #000000;
+    color: #000;
 }
 
 .button-row button {
     width: 180px;
     padding: 5px 5px;
+    margin-bottom: 10px;
 }
 
 .projects {
     border: 5px solid #2a2a2a;
     border-radius: 10px;
-}
-
-.desktop-proj {
-    display: block;
-}
-
-.web-proj {
-    display: block;
-}
-
-.mobile-proj {
-    display: block;
-}
-
-.scripts-proj {
-    display: block;
+    margin: 10px 10px;
+    padding: 10px 10px;
 }
 
 .desktop-proj.hidden {
@@ -126,4 +125,26 @@ ol li {
 
 .scripts-proj.hidden {
     display: none;
+}
+
+.about-content {
+    display: block;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+#education {
+    border: 5px solid #2a2a2a;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#mission {
+    border: 5px solid #2a2a2a;
+    border-radius: 10px;
+}
+
+.about-pic {
+    max-width: 30vw;
+    max-height: auto;
 }

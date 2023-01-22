@@ -11,13 +11,13 @@
     <h2 class="welcome">Welcome to my Portfolio Site!</h2>
     <div class="showcase">
         <p>
-            Here you can read about (or access) various projects of mine. Please also consult my 
+            Here you can read about (and access) various projects of mine. Please also consult my 
             <a href="https://github.com/noo8man3">GitHub</a> for in-progress projects and open source contributions.
         </p>
     </div>
     <hr />
     <div class="projects-title">
-        <h2>>Projects</h2>
+        <h2>>Projects_</h2>
         <div class="button-row">
             <button class="desktop-btn">
                 <p>Desktop</p>
@@ -56,6 +56,12 @@
                     is very simple: If you willingly enter your credentials on this site, the webpage tells 
                     you to change them.
                 </p>
+
+                <h4><a href="https://github.com/noo8man3/Budget_App-JS">Budget App - HTML, CSS, JavaScript</a></h4>
+                <p>
+                    This webpage lets you plan out a budget via entering expenses and doing arithmetic with
+                    your income.
+                </p>
             </div>
     
             <div class="mobile-proj hidden">
@@ -76,15 +82,15 @@
             </div>
         </div>
     </div>
-    <hr />
+
     <div class="resume">
-        <h2>>Resume_Highlights</h2>
+        <h2>>Resume-Highlights_</h2>
         <button class="resume-btn" type="button">
             <span class="plus-icon">
                 <b>+</b>
             </span>
         </button>
-        <div class="resume-text">
+        <div class="resume-text hidden">
             <h4>Education</h4>
             <p>
                 B.S., Computer Science/Mathematics, St. Joseph's College, Patchogue, NY, 2019<br />
@@ -103,64 +109,42 @@
             <p>
                 Programming Languages:
             </p>
-            <ol>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>Python</li>
-            </ol>
+            <section id="language-list">
+                <ol>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                </ol>
+            </section>
         </div>
     </div>
-    <hr />
-    <h2>>About</h2>
-    <table>
-    <div class="education">
-        <div class="content" id="education">
-            <tr>
-                <td>
-                    <img src="sju.jpg" width="600" height="400" />
-                </td>
-                <td>
-                    <h4>Education</h4>
-                    <p>
-                        I started my journey in higher education at Suffolk County Community College where I 
-                        studied for three years and graduated (twice), obtaining an 
-                        <abbr title="Associate in Arts">A.A.</abbr> in General Studies and an 
-                        <abbr title="Associate in Science">A.S.</abbr> in Computer Science. Afterwards, I decided 
-                        to attend St. Joseph's College in Patchogue, NY. I graduated with a 
-                        <abbr title="Bachelor in Science">B.S.</abbr> in Mathematics/Computer Science program 
-                        with a 3.9 GPA. While at St. Joseph's, I became a member of the Programming Team and 
-                        went to competition in the Bronx. 
-                    </p>
-                </td>
-            </tr>
-            
-        </div>
+
+    <h2>>About_</h2>
+    <div class="about-content" id="education">
+        <h4>Education</h4>
+        <img src="sju.jpg" class="about-pic" />
+        <p>
+            I began my journey in higher education at Suffolk County Community College where I graduated 
+            twice, obtaining an A.A. in General Studies and an A.S. in Computer Science. Afterwards, I 
+            stayed local and attended St. Joseph's College (now St. Joseph's University) where I graduated
+            with a B.S. in Mathematics/Computer Science. Through hard work (and luck), I managed to keep
+            a 3.9 GPA.
+
+        </p>
     </div>
-    <div class="mission">
-        <div class="content" id="mission">
-            <tr>
-                <td>
-                    <h4>Mission</h4>
-                    <p>
-                        My mission to to obtain gainful employment in the technology sector where I can grow 
-                        professionally and learn the trade from more experienced developers. Ultimately, I just 
-                        love solving puzzles and problems alike. While entry-level, I believe my passion for 
-                        problem solving along with my ability to learn quickly can supplant my lack of experience, 
-                        making me an asset to any firm.
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <img src="handshake.webp" width="600" height="400" />
-                    </p>
-                </td>
-            </tr>
-        </div>
+
+    <div class="about-content" id="mission">
+        <h4>Mission</h4>
+        <img src="handshake.webp" class="about-pic"/>
+        <p>
+            My mission is to obtain gainful employment in the tech industry, preferably as a Software 
+            Developer. I throughly enjoy solving problems and puzzles alike, and I believe my willingness 
+            to learn and ability to do so quickly will be an asset to any firm.
+        </p>
     </div>
-    </table>
 
 </body>
 <footer>
