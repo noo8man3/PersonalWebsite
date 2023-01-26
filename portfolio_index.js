@@ -3,17 +3,21 @@ const webBtn = document.querySelector('.web-btn');
 const mobileBtn = document.querySelector('.mobile-btn');
 const scriptsBtn = document.querySelector('.scripts-btn');
 
+const educationBtn = document.getElementById('education-btn');
+const missionBtn = document.getElementById('mission-btn');
+
 const desktopText = document.querySelector('.desktop-proj');
 const webText = document.querySelector('.web-proj');
 const mobileText = document.querySelector('.mobile-proj');
 const scriptsText = document.querySelector('.scripts-proj');
 
-const resumeBtn = document.querySelector(".resume-btn");
-const resumeText = document.querySelector(".resume-text");
+const educationDiv = document.getElementById('education-div');
+const missionDiv = document.getElementById('mission-div');
 
-const btnRow = document.querySelector(".button-row");
+const resumeBtn = document.querySelector('.resume-btn');
+const resumeText = document.querySelector('.resume-text');
 
-const blinkSpans = document.querySelectorAll(".blink");
+const btnRow = document.querySelector('.button-row');
 
 btnRow.childNodes.forEach(function(btn) {
     btn.addEventListener('click', function(e) {
@@ -49,6 +53,26 @@ btnRow.childNodes.forEach(function(btn) {
     });
 });
 
-resumeBtn.addEventListener("click", function (e) {
-    resumeText.classList.toggle("hidden");
+resumeBtn.addEventListener('click', function (e) {
+    resumeText.classList.toggle('hidden');
 });
+
+educationBtn.addEventListener('click', function(e) {
+    if(!(educationBtn.classList.contains('active'))) {
+        educationBtn.classList.toggle('active');
+        missionBtn.classList.toggle('active');
+        educationDiv.classList.remove('hidden');
+        missionDiv.classList.add('hidden');
+    }
+
+});
+
+missionBtn.addEventListener('click', function(e) {
+    if(!(missionBtn.classList.contains('active'))) {
+        missionBtn.classList.toggle('active');
+        educationBtn.classList.toggle('active');
+        missionDiv.classList.remove('hidden');
+        educationDiv.classList.add('hidden');
+    }
+
+})
