@@ -39,10 +39,19 @@ h4 {
     color:#00aa00;
 }
 
+h5 {
+    text-decoration: solid;
+    color:#00aa00;
+}
+
 ul {
     display: inline-block;
     width: 600px;
-    list-style: none;
+    list-style: circle;
+}
+
+ul li {
+    color: #fff;
 }
 
 a {
@@ -60,13 +69,8 @@ button {
     color: #fff;
 }
 
-b {
-    background-color: #00aa00;
-    color: #000000;
-}
-
 p {
-    color: #ffffff;
+    color: #fff;
 }
 
 #language-list {
@@ -78,16 +82,21 @@ ol {
     list-style: none;
     padding: 0;
 }
+
 ol li {
     counter-increment: step-counter;
     color: #fff;
 }
+
 ol li:before {
     content: counter(step-counter)". ";
 }
 
-.resume-text.hidden {
-    display: none;
+.resume-content {
+    border: 5px solid #2a2a2a;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px 10px;
 }
 
 .about-title {

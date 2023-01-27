@@ -5,6 +5,7 @@ const scriptsBtn = document.querySelector('.scripts-btn');
 
 const educationBtn = document.getElementById('education-btn');
 const missionBtn = document.getElementById('mission-btn');
+const skillsBtn = document.getElementById('skills-btn');
 
 const desktopText = document.querySelector('.desktop-proj');
 const webText = document.querySelector('.web-proj');
@@ -13,9 +14,7 @@ const scriptsText = document.querySelector('.scripts-proj');
 
 const educationDiv = document.getElementById('education-div');
 const missionDiv = document.getElementById('mission-div');
-
-const resumeBtn = document.querySelector('.resume-btn');
-const resumeText = document.querySelector('.resume-text');
+const skillsDiv = document.getElementById('skills-div');
 
 const btnRow = document.querySelector('.button-row');
 
@@ -53,16 +52,20 @@ btnRow.childNodes.forEach(function(btn) {
     });
 });
 
-resumeBtn.addEventListener('click', function (e) {
-    resumeText.classList.toggle('hidden');
-});
-
 educationBtn.addEventListener('click', function(e) {
     if(!(educationBtn.classList.contains('active'))) {
         educationBtn.classList.toggle('active');
-        missionBtn.classList.toggle('active');
         educationDiv.classList.remove('hidden');
+
+        if(missionBtn.classList.contains('active'))
+            missionBtn.classList.remove('active');
+
+        if(skillsBtn.classList.contains('active'))
+            skillsBtn.classList.remove('active');
+    
         missionDiv.classList.add('hidden');
+        skillsDiv.classList.add('hidden');
+
     }
 
 });
@@ -70,9 +73,33 @@ educationBtn.addEventListener('click', function(e) {
 missionBtn.addEventListener('click', function(e) {
     if(!(missionBtn.classList.contains('active'))) {
         missionBtn.classList.toggle('active');
-        educationBtn.classList.toggle('active');
         missionDiv.classList.remove('hidden');
-        educationDiv.classList.add('hidden');
-    }
 
-})
+        if(educationBtn.classList.contains('active'))
+            educationBtn.classList.remove('active');
+
+        if(skillsBtn.classList.contains('active'))
+            skillsBtn.classList.remove('active');
+    
+        educationDiv.classList.add('hidden');
+        skillsDiv.classList.add('hidden');
+    }
+});
+
+skillsBtn.addEventListener('click', function(e) {
+    console.log(skillsBtn.classList.contains('active'));
+    
+    if(!(skillsBtn.classList.contains('active'))) {
+        skillsBtn.classList.toggle('active');
+        skillsDiv.classList.remove('hidden');
+
+        if(educationBtn.classList.contains('active'))
+            educationBtn.classList.remove('active');
+
+        if(missionBtn.classList.contains('active'))
+            missionBtn.classList.remove('active');
+    
+        educationDiv.classList.add('hidden');
+        missionDiv.classList.add('hidden');
+    }
+});
